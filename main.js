@@ -9,7 +9,7 @@ $(document).ready(function () {
     let number1     = randomizer(100);
     let number2     = randomizer(200);
     let operator    = ["+","-","/","*"];
-    let randomOp    = randomizer(3);
+    let randomOp    = randomizer(4);
     let answerRet   = $('#answer-return');
     let scoreSpam   = $('#score');
     let score       = 0;
@@ -126,7 +126,7 @@ function makeEquation() {
     number1     = randomizer(100);
     number2     = randomizer(200);
     operator    = ["+","-","/","*"];
-    randomOp    = randomizer(3);
+    randomOp    = randomizer(4);
     equal = eval(number1 + operator[randomOp] + number2);
     result = Number.isInteger(equal) ? equal.toFixed(0) : equal.toFixed(1);
     // Get the Equation
